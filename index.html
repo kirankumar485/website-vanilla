@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Pricing Tables -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Plan 1</h5>
+                        <p class="card-text">Price: $10/month</p>
+                        <button class="btn btn-primary open-modal" data-toggle="modal" data-target="#myModal">Select</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Plan 2</h5>
+                        <p class="card-text">Price: $20/month</p>
+                        <button class="btn btn-primary open-modal" data-toggle="modal" data-target="#myModal">Select</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Plan 3</h5>
+                        <p class="card-text">Price: $30/month</p>
+                        <button class="btn btn-primary open-modal" data-toggle="modal" data-target="#myModal">Select</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more pricing tables similarly -->
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Order Form</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <!-- Form goes here -->
+                    <form id="orderForm">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="comments">Order Comments:</label>
+                            <textarea class="form-control" id="comments"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" id="submitOrder">Submit</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Range Input -->
+    <label class="form-label" for="customRange1">Example range</label>
+    <div class="range">
+        <input type="range" class="form-range" id="customRange1" min="0" max="30" step="0" />
+    </div>
+    <div id="rangeValue">0</div>
+
+    <!-- Include Bootstrap and jQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Your custom JavaScript for form submission and range input -->
+    <script  src="./index.js" type="module">
+ 		
+</script>
+
+</body>
+</html>
